@@ -8,14 +8,24 @@ module.exports = {
   module: {
 
     rules: [
+
+      {
+        test: /\.(png|jpg|gif|wav|mp3)$/i,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 1000000000,
+            },
+          },
+        ]
+      },
+
+
       {
         test: /\.tsx?$/,
         use: 'ts-loader',
         exclude: /node_modules/,
-
-
-
-        
       },
     ],
   },
