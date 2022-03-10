@@ -1,11 +1,12 @@
 # React Boilerplate
 
-A boilerplate with React, Typescript and inline (base64) resource inclusion, that builds and packages everything into a single html file.
+
+A boilerplate for React projects in Typescript, with inline css and multimedia resource inclusion (in the form of base64 strings), that builds and packages everything into a single html file for production.
 
 Ideal for SPAs (Single Page Applications).
 
 
-## Setting it up:
+## Set-up and usage
 
 1. Clone this repository
 
@@ -17,7 +18,14 @@ Ideal for SPAs (Single Page Applications).
 ```
 yarn install
 ```
-... in the project's root directory
+... in the project's root directory, to install this project's dependencies.
+
+3. To build the single page application from source, run:
+
+```
+yarn run build
+```
+... this will generate the file `/dist/index.html`, which you can open from any browser.
 
 
 ## Attributions:
