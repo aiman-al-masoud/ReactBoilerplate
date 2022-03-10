@@ -23,6 +23,8 @@ export default class TestClass extends Component<any, any> {
         }
     }
 
+
+
     render(): ReactNode {
         return (<div>
             <h1>Ciao Mondo</h1>
@@ -30,7 +32,7 @@ export default class TestClass extends Component<any, any> {
                 <source src={CorrectSound} />
                 Sorry your browser doesn't support the audio tag
             </audio>
-            <img src={CatImage} alt="" width="200" />
+            <img src={CatImage} alt=""  style={ { width : 200  }  }  />
             <button onClick={this.backgroundTask}>Ping Server</button>
             <p>{this.state.responseOk? "server responded" : "server didn't respond"}</p>
         </div>)

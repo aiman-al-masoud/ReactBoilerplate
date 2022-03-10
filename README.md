@@ -1,9 +1,9 @@
 # React Boilerplate
 
 
-A boilerplate for React projects in Typescript, with inline css and multimedia resource inclusion (in the form of base64 strings), that builds and packages everything into a single html file for production.
+A boilerplate for React projects in Typescript, with inline css and multimedia resource inclusion (in the form of base64 strings), that builds and packages everything using Webpack into a single html file.
 
-Ideal for SPAs (Single Page Applications).
+Ideal for SPAs (Single Page Applications). 
 
 
 ## Set-up and usage
@@ -25,7 +25,17 @@ yarn install
 ```
 yarn run build
 ```
-... this will generate the file `/dist/index.html`, which you can open from any browser.
+... this will generate the (production-ready) file `/dist/index.html`, which you can open from any browser.
+
+or:
+
+```
+yarn run dev-build
+```
+
+... this will instead generate a development build with un-minified names and errors (easier to debug), always at the same location `/dist/index.html`.
+
+
 
 
 ## Attributions:
