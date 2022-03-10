@@ -6,6 +6,7 @@ A boilerplate for React projects in Typescript, with inline css and multimedia r
 Ideal for SPAs (Single Page Applications). 
 
 
+
 ## Set-up and usage
 
 1. Clone this repository
