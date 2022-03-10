@@ -1,7 +1,7 @@
 {
-  "name": "@luxlunaris/psittacus",
+  "name": "@luxlunaris/react-boilerplate",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.tsx",
   "license": "GPL-3.0-only",
   "dependencies": {
     "@babel/plugin-transform-runtime": "^7.17.0",
