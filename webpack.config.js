@@ -3,25 +3,33 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
 
+  //entry point (main's file)
   entry: path.join(__dirname, "app", "src", "index.tsx"),
 
   module: {
 
     rules: [
 
+      //load css 
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
+
+      //load multimedia resources as base 64
       {
         test: /\.(png|jpg|gif|wav|mp3)$/i,
         use: [
           {
             loader: 'url-loader',
             options: {
-              limit: 1000000000,
+              limit: 1000000000, 
             },
           },
         ]
       },
 
-
+      //load tsx (typescript JSX) source files
       {
         test: /\.tsx?$/,
         use: 'ts-loader',
@@ -34,52 +42,17 @@ module.exports = {
     extensions: ['.tsx', '.ts', '.js'],
   },
 
-
+  //output bundle's location
   output: {
     filename: 'bundle.js',
-    path:path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "dist"),
   },
 
-
-  // module: {
-  //   rules: [
-  //     {
-  //       test: /\.(png|jpg|gif|wav|mp3)$/i,
-  //       use: [
-  //         {
-  //           loader: 'url-loader',
-  //           options: {
-  //             limit: 1000000000,
-  //           },
-  //         },
-  //       ],
-  //     },
-
-
-  //     {
-  //       test: /\.css$/i,
-  //       use: ["style-loader", "css-loader"],
-  //     },
-
-      
-  //     {
-  //       test: /\.?jsx?$/,
-  //       exclude: /node_modules/,
-  //       use: {
-  //         loader: "babel-loader",
-  //         options: {
-  //           presets: ['@babel/preset-env', '@babel/preset-react'],
-  //           plugins :['@babel/plugin-transform-runtime'] 
-  //         }
-  //       }
-  //     }
-
-  //   ]
-  // },
+  //auto-generates output html file with link to script
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.join(__dirname, "app","src", "index.html"),
-    }),  
+      template: path.join(__dirname, "app", "src", "index.html"),
+    }),
   ],
 
 

@@ -2,7 +2,7 @@ import React from "react"
 import { Component, ReactNode } from "react";
 import CatImage from "../res/cat.jpg"
 import CorrectSound from "../res/correct.mp3"
-
+import "./index.css"
 
 
 export default class TestClass extends Component<any, any> {
