@@ -17,7 +17,7 @@
 
 A boilerplate for React projects in Typescript, with inline css and multimedia resource inclusion (in the form of base64 strings), that builds and packages everything using Webpack into a single html file.
 
-Ideal for SPAs (Single Page Applications). 
+Ideal for SPAs (Single Page Applications), or to practice on TypeScript. 
 
 
 
