@@ -91,6 +91,7 @@ yarn run dev-build
 
 <a href="https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/basic_type_example">https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/basic_type_example</a>
 
+<a href="https://www.typescriptlang.org/docs/handbook/basic-types.html#table-of-contents">https://www.typescriptlang.org/docs/handbook/basic-types.html#table-of-contents</a>
 
 
 
