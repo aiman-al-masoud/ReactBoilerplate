@@ -89,10 +89,20 @@ yarn run dev-build
 
 ### Useful Resources:
 
+#### Official Documentation:
+
 <a href="https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/basic_type_example">https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/basic_type_example</a>
+
+
+#### Basic Data Types:
 
 <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html#table-of-contents">https://www.typescriptlang.org/docs/handbook/basic-types.html#table-of-contents</a>
 
+#### Types vs Interfaces:
 
+<a href="https://blog.logrocket.com/types-vs-interfaces-in-typescript/">https://blog.logrocket.com/types-vs-interfaces-in-typescript/</a>
 
+#### Interface Functions
+
+<a href="https://medium.com/@jeffbutsch/typescript-interface-functions-c691a108e3f1">https://medium.com/@jeffbutsch/typescript-interface-functions-c691a108e3f1</a>
 
