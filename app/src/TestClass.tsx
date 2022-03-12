@@ -5,9 +5,10 @@ import CorrectSound from "../res/correct.mp3"
 import "./index.css"
 
 
-export default class TestClass extends Component<any, any> {
+export default class TestClass extends Component<any, TestClassState> {
     constructor(props: any) {
         super(props)
+
         this.state = {
             responseOk: false,
             fullscreen : false
@@ -42,7 +43,17 @@ export default class TestClass extends Component<any, any> {
             <button onClick={this.toggleFullscreen}>{this.state.fullscreen? "Exit Fullscreen" : "Enter Fullscreen" }</button>
             <p>{this.state.responseOk ? "server responded" : "server didn't respond"}</p>
         </div>)
+
     }
 
+}
 
+/**
+ * An interface for the state of the TestClass react component.
+ */
+interface TestClassState{
+    /** true if the server responded */
+    responseOk : boolean, 
+    /** true if fullscreen mode is enabled */
+    fullscreen : boolean 
 }
