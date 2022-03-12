@@ -3,6 +3,7 @@ import { Component, ReactNode } from "react";
 import CatImage from "../res/cat.jpg"
 import CorrectSound from "../res/correct.mp3"
 import "./index.css"
+import LegacyClass from "./LegacyCode";
 
 
 export default class TestClass extends Component<any, TestClassState> {
@@ -13,6 +14,9 @@ export default class TestClass extends Component<any, TestClassState> {
             responseOk: false,
             fullscreen : false
         }
+
+        new LegacyClass("old timer").sayBye()
+
     }
 
     backgroundTask = async () => {
